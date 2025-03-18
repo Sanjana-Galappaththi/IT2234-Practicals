@@ -1,176 +1,48 @@
-# MATLAB Code Repository
+1.Array Operations
 
-This repository contains various MATLAB scripts demonstrating basic mathematical operations, matrix manipulations, and control structures such as loops and conditionals.
+![question1](https://github.com/user-attachments/assets/edbde8f1-d11c-4876-9aaf-2693af7cd2ad)
 
-## Requirements
-- MATLAB application is required to run these scripts.
+2.find the max number in the array using forEach
 
-## Included MATLAB Scripts
+![question2](https://github.com/user-attachments/assets/75800668-1b02-4133-8f80-adbf866e321f)
 
-### 1. Basic Arithmetic Operations
-```matlab
-% Define variables
-a = 5;
-b = 10;
+3.print the nested Array[[1,2,30], [5,6], [8,5,3]]
 
-% Addition
-c = a + b;
-% Multiplication
-d = a * b;
-% Division
-e = a / b;
-% Subtraction
-f = a - b;
-```
-**Output:**
-```
-c = 15
-d = 50
-e = 0.5000
-f = -5
-```
+![question3](https://github.com/user-attachments/assets/a4e6a512-31cb-4ce3-a8cb-88cbd396e45b) 
 
-### 2. Matrix Creation and Operations
-```matlab
-% Define Matrices
-A = [1 2 3];
-B = [4;5;6];
-C = [2 3 4;5 6 7;8 9 10];
+4.arr=[1,2,3,4,5,6]  target=7 write a code find the all pairs that sum up to target
 
-% Size of matrix
-size_C = size(C);
-% Sum of matrix elements
-sum_C = sum(sum(C));
-% Column-wise and row-wise sums
-col_sum = sum(C,1);
-row_sum = sum(C,2);
-```
-**Output:**
-```
-size_C = [3 3]
-sum_C = 54
-col_sum = [15 18 21]
-row_sum = [9; 18; 27]
-```
+![question4](https://github.com/user-attachments/assets/d01c874a-0e68-4da2-9344-5b6fb0b81a48)
 
-### 3. Finding Min and Max Elements
-```matlab
-% Column-wise minimum
-min_col = min(C);
-% Minimum of whole matrix
-min_all = min(min(C));
-% Column-wise maximum
-max_col = max(C);
-% Maximum of whole matrix
-max_all = max(max(C));
-```
-**Output:**
-```
-min_col = [2 3 4]
-min_all = 2
-max_col = [8 9 10]
-max_all = 10
-```
+5. a=[4,5,6,3,7],b=[8,3,2,1,5] find the common elements between a and b
 
-### 4. Accessing Matrix Elements
-```matlab
-% Accessing specific elements
-second_element = C(2);
-first_row = C(1,:);
-first_column = C(:,1);
-last_element_first_row = C(1,end);
-```
-**Output:**
-```
-second_element = 5
-first_row = [2 3 4]
-first_column = [2; 5; 8]
-last_element_first_row = 4
-```
+![question5](https://github.com/user-attachments/assets/b3383970-c20c-4012-8c92-2e06605c87ae)
 
-### 5. Matrix Addition, Subtraction, and Multiplication
-```matlab
-A = [1 2 3 4;5 6 7 8;9 10 11 12;13 14 15 16];
-B = A; % Duplicate matrix
+6.find the most freaquent elemenyt in array [4,8,3,4,3,2,1,8,4]
 
-% Element-wise Addition and Subtraction
-sum_matrix = A + B;
-diff_matrix = A - B;
+![question6](https://github.com/user-attachments/assets/021cf551-a43e-4b70-bc07-d30e5d8d446e)
 
-% Matrix Multiplication
-prod_matrix = A * B;
-```
-**Output:**
-```
-sum_matrix =
-  2  4  6  8
- 10 12 14 16
- 18 20 22 24
- 26 28 30 32
+7.Array Operation use push and pop 
+arr=['a','b','c','d'] ,reverse the array using push and pop [a b c d -> d c b a ]
 
-diff_matrix =
-  0  0  0  0
-  0  0  0  0
-  0  0  0  0
-  0  0  0  0
+![question7](https://github.com/user-attachments/assets/06fddf75-9da5-43ee-aa20-8cd9b61b9e67)
 
-prod_matrix =
-  90  100  110  120
- 202  228  254  280
- 314  356  398  440
- 426  484  542  600
-```
+8.Jason {key:value}
+ i)store it in array
+ ii)find the female students
+ iii)find the students who are folllowuing it course
+ iv)find the max and average GPA among the student
+ v)Find the average GPA among the students
 
-### 6. Conditional Statements
-```matlab
-num = 4;
-if num > 0
-    disp('The Number Is Positive')
-else
-    disp('The Number Is Negative')
-end
-```
-**Output:**
-```
-The Number Is Positive
-```
+![question8](https://github.com/user-attachments/assets/db89e51a-8291-4650-b57b-8cf363a19a60)
+![q8 2](https://github.com/user-attachments/assets/4ca5f95c-9ffe-4250-b1a6-89e71a5e8a46)
+![q8 3](https://github.com/user-attachments/assets/254688d6-fdc9-40e8-8300-04405e328b98)
+![q8 4](https://github.com/user-attachments/assets/322a5ae8-31f1-4378-8d16-01a0a58775ce)
 
-### 7. Checking Odd or Even Number
-```matlab
-if mod(num,2) == 0
-    disp('The Number Is Even')
-else
-    disp('The Number Is Odd')
-end
-```
-**Output:**
-```
-The Number Is Even
-```
 
-### 8. While Loop: Printing Numbers 1 to 5
-```matlab
-a = 1;
-while a <= 5
-    disp (a)
-    a = a + 1;
-end
-```
-**Output:**
-```
-1
-2
-3
-4
-5
-```
 
-## How to Run the Scripts
-1. Open MATLAB.
-2. Copy and paste the desired script into the MATLAB command window or save it as a `.m` file and run it.
-3. Observe the output in the command window.
 
-## Conclusion
-These MATLAB scripts demonstrate fundamental concepts such as arithmetic operations, matrix manipulation, conditional statements, and loops. They serve as an excellent introduction to MATLAB programming.
+
+
 
 
