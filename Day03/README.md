@@ -1,15 +1,7 @@
-# IT2234-Practicals
+Question 1: functions
 
-01.Print "Hello World!"
+![q1](https://github.com/user-attachments/assets/65a9a174-fbd5-4629-a9b9-ad07d5de5888)
 
-![Note1](https://github.com/user-attachments/assets/b9b38168-5aea-482a-80df-cba65d641521)
+Question 2:write a boolean function to find a given number is prime or not
+![q2](https://github.com/user-attachments/assets/f1415ada-8fb3-4900-a77f-47dd41d41c14)
 
-
-02.Arithmetic Operations
-
-![Note2](https://github.com/user-attachments/assets/8a9c8410-cd71-4e63-ac97-33dfc1f8ab76)
-
-
-03.Loops
-
-![Note3](https://github.com/user-attachments/assets/95db8003-e091-4f5b-9e37-d463d21925a6)
