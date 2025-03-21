@@ -1,15 +1,13 @@
-# IT2234-Practicals
+1.output 1
 
-01.Print "Hello World!"
+![q3](https://github.com/user-attachments/assets/40583039-547c-42dd-a09f-702a6ec93812)
 
-![Note1](https://github.com/user-attachments/assets/b9b38168-5aea-482a-80df-cba65d641521)
-
-
-02.Arithmetic Operations
-
-![Note2](https://github.com/user-attachments/assets/8a9c8410-cd71-4e63-ac97-33dfc1f8ab76)
+2.output 2
 
 
-03.Loops
+![q2](https://github.com/user-attachments/assets/566398f7-bfe1-455c-87ae-eee1fc543b29)
 
-![Note3](https://github.com/user-attachments/assets/95db8003-e091-4f5b-9e37-d463d21925a6)
+3.output 3
+
+
+![q1](https://github.com/user-attachments/assets/a58f5a2c-57c4-4abe-9cd1-18b3125153d4)
