@@ -1,0 +1,143 @@
+Exercice01:
+create a data base "SampleDb" and create collection "sample".
+drop database "SampleDb"
+
+
+
+Exersice02: 
+create a data base "checkdb and create collection "sampledata".
+drop database "SampleDb"
+
+
+
+Exersice03:
+Create collection "Degree" from "UniDb"
+
+1) insert data one by one
+
+2) insert data (More than one)
+
+
+3) delete object one by one
+code: db.Degrees.deleteOne({_id: ObjectId('680ee960f2733258544cc635')})
+
+4)find the data
+code: db.Degrees.find().projection(['name','duration'])
+
+5)Find the data name only
+code: db.Degrees.find({},{name:1,_id:0}).pretty()
+
+6) Delete tha data their duration is less than 4(Delete Many option)
+code: db.Degrees.deleteMany({duration:{$lt:4}})
+
+7) update data by using updateOne() command.
+code: db.Degrees.updateOne({_id: ObjectId('680ee960f2733258544cc635')},{$set:{name:'BIT',duration:3}})
+
+8) Find the data(only newlly updates)
+code: db.Degrees.findOne({ _id: ObjectId('680eeb15f2733258544cc639')})
+
+9) Update database by using updateMany() command.
+code: db.Degrees.updateMany({duration:{$gte:4}},{$inc:{duration:1}})
+      db.Degrees.find()
+	  
+10) Update database by using updateOne() command.
+code: db.students.updateOne({regno:'2021IT001'},{$push:{skills:'PHP'}})
+then,
+you can find this student
+code: db.students.findOne({regno:'2021IT001'})
+
+
+
+Exersice04:
+create a database bookshop
+create a collection books
+insert the following data
+{
+  "title": "The Hobbit",
+  "author": "J.R.R. Tolkien",
+  "published_year": 1937,
+  "genres": ["Fantasy", "Adventure"],
+  "pages": 310,
+  "available": true,
+  "rating": 4.8
+}
+
+  {
+    "title": "1984",
+    "author": "George Orwell",
+    "published_year": 1949,
+    "genres": ["Dystopian", "Political Fiction"],
+    "pages": 328,
+    "available": true,
+    "rating": 4.7
+  },
+  {
+    "title": "To Kill a Mockingbird",
+    "author": "Harper Lee",
+    "published_year": 1960,
+    "genres": ["Southern Gothic", "Drama"],
+    "pages": 281,
+    "available": false,
+    "rating": 4.6
+  },
+  {
+    "title": "The Great Gatsby",
+    "author": "F. Scott Fitzgerald",
+    "published_year": 1925,
+    "genres": ["Tragedy"],
+    "pages": 180,
+    "available": true,
+    "rating": 4.4
+  },
+  {
+    "title": "Brave New World",
+    "author": "Aldous Huxley",
+    "published_year": 1932,
+    "genres": ["Science Fiction", "Dystopian"],
+    "pages": 311,
+    "available": true,
+    "rating": 4.2
+  }
+
+1) Find all books
+code: db["books"].find()
+
+2)Find all books published after 1950
+code: db.books.find({published_year:{$gt:1950}})
+
+3)Find the avilable books
+code: db.books.find({available:{$eq:true}})
+
+
+4)Find all books that belong to the "Dystopian" genre
+code: db.books.find({genres:"Dystopian"})
+
+5)Find the books which published after 1960 and had rating more than 4.0
+No result
+
+6)Project only title and author fields:
+code: db.books.find({},{title:1,author:1,_id:0}).pretty()
+ 
+
+7)Update the book "1984" to set available: false:
+code: db.books.updateOne({ _id: ObjectId('680ef8a6f2733258544cc64a')},{$set:{available:'false'}})
+
+8)Increase the rating of "Brave New World" by +0.1:
+code: db.books.updateOne({_id: ObjectId('680ef90ef2733258544cc64e')},{$inc:{rating:0.1}})
+      db.books.findOne({_id: ObjectId('680ef90ef2733258544cc64e')})
+
+
+9)Add a new genre "Classic" to "The Great Gatsby":
+code:db.Books.updateOne({title:"The Great Gatsby"},{$addToSet:{ genres: "Classic"}})
+
+10)Sort books by published_year ascending:
+code:db.Books.find().sort({published_year:1})
+
+
+11)Sort books by rating descending:
+code:db.Books.find().sort({ rating:-1})
+
+
+12)Delete all books with a rating lower than 4.5:
+code:db.Books.deleteMany({rating:{$lt: 4.5}})
+
