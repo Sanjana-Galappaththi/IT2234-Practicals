@@ -53,60 +53,13 @@ Create collection "Degree" from "UniDb"
 10) Update database by using updateOne() command.
 
     ![Q3 10](https://github.com/user-attachments/assets/06f6a644-adfa-41b2-b483-290100e3bc9f)
+
+
+    
 Exersice04:
-
-
 create a database bookshop
+
 create a collection books
-insert the following data
-{
-  "title": "The Hobbit",
-  "author": "J.R.R. Tolkien",
-  "published_year": 1937,
-  "genres": ["Fantasy", "Adventure"],
-  "pages": 310,
-  "available": true,
-  "rating": 4.8
-}
-
-  {
-    "title": "1984",
-    "author": "George Orwell",
-    "published_year": 1949,
-    "genres": ["Dystopian", "Political Fiction"],
-    "pages": 328,
-    "available": true,
-    "rating": 4.7
-  },
-  {
-    "title": "To Kill a Mockingbird",
-    "author": "Harper Lee",
-    "published_year": 1960,
-    "genres": ["Southern Gothic", "Drama"],
-    "pages": 281,
-    "available": false,
-    "rating": 4.6
-  },
-  {
-    "title": "The Great Gatsby",
-    "author": "F. Scott Fitzgerald",
-    "published_year": 1925,
-    "genres": ["Tragedy"],
-    "pages": 180,
-    "available": true,
-    "rating": 4.4
-  },
-  {
-    "title": "Brave New World",
-    "author": "Aldous Huxley",
-    "published_year": 1932,
-    "genres": ["Science Fiction", "Dystopian"],
-    "pages": 311,
-    "available": true,
-    "rating": 4.2
-  }
-
-  
 
 1) Find all books
 
