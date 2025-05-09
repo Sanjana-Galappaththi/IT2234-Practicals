@@ -54,6 +54,8 @@ Create collection "Degree" from "UniDb"
 
     ![Q3 10](https://github.com/user-attachments/assets/06f6a644-adfa-41b2-b483-290100e3bc9f)
 Exersice04:
+
+
 create a database bookshop
 create a collection books
 insert the following data
@@ -103,6 +105,8 @@ insert the following data
     "available": true,
     "rating": 4.2
   }
+
+  
 
 1) Find all books
 
