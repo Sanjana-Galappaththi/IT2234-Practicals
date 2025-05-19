@@ -211,14 +211,14 @@
 }
 
 Question 03:
-db.students.find({ gender: "Female" }, { name: 1, age: 1, gender: 1 })
+db.Students.find({ gender: "Female" }, { name: 1, age: 1, gender: 1 })
 
 Question 04:
-db.students.find({ age: { $lt: 22 }, enrollmentYear: { $gt: 2020 } })
+db.Students.find({ age: { $lt: 22 }, enrollmentYear: { $gt: 2020 } })
 
 
 Question 05:
-db.grades.find({ studentId: ObjectId("64b1fcd1f4a13a001e3d41a1") })
+db.Grades.find({ studentId: ObjectId("64b1fcd1f4a13a001e3d41a1") })
 
 
 Question 06:
@@ -229,4 +229,4 @@ db.Grades.aggregate([
 
 
 Question 07:
-db.grades.find({ term: "Fall 2022" })
+db.Grades.find({ term: "Fall 2022" })
