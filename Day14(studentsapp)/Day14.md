@@ -15,6 +15,9 @@ In MongoDB, the POST method is used to send data to the database, typically when
 
 Question 02:
 
+In MongoDB, the GET method is used to retrieve data from a collection. If you're working with MongoDB through an API, a GET request allows you to fetch documents based on query parameters.
+
+
 ![Q2 1](https://github.com/user-attachments/assets/9f649a12-add1-4d70-ac49-1beba92167b0)
 
 ![Q2 2](https://github.com/user-attachments/assets/c98f96ce-bba3-4f4e-b0b6-5264afe95f4b)
@@ -23,6 +26,8 @@ Question 02:
 
 
 Question 03:
+In MongoDB, the DELETE method is used to remove documents from a collection. If you're working with MongoDB through an API, a DELETE request allows you to delete specific records based on given criteria.
+
 
 ![Q3 1](https://github.com/user-attachments/assets/4060909e-c2bf-47e2-9025-b356626f548e)
 
