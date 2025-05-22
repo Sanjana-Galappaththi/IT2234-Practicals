@@ -1,5 +1,7 @@
 Question 01:
 
+In MongoDB, the POST method is used to send data to the database, typically when creating new documents. If you're working with MongoDB through an API a POST request allows you to insert a new document into a collection.
+
 ![Q1 1](https://github.com/user-attachments/assets/468488bc-f779-40e5-9867-026e6e0ab9ed)
 
 ![Q1 2](https://github.com/user-attachments/assets/b1331d1a-02a1-444c-acc7-74aa046efb2a)
