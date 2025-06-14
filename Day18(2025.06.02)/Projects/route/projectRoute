@@ -1,0 +1,11 @@
+const express=require('express')
+const router=express.Router()
+const Project=require('../models/Project')
+const findFun = require('.../services/genericFindServices');
+
+router.get('/', async (req,res)=>
+{
+    findFun(res,Project)
+})
+
+module.export=router
